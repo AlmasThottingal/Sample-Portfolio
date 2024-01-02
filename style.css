@@ -1,0 +1,266 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+}
+
+.navbar{
+    display:flex;     
+    justify-content:space-between; /* For  having a space between logo and list  */
+    width: 85%;
+    margin-left: 50px; 
+    align-items: center;  
+ 
+   
+}
+
+
+.logo{
+    width: 120px;
+    margin-top: 10px;
+}
+
+.listitem{
+    display: inline-block; /* To display the items in a line */
+    list-style: none; /* To remove the bullet points of the list */
+    margin:10px 20px;
+}
+
+.link{
+    color: black;
+    text-decoration: none; /* To remove the underlines of link */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.link:hover{
+    color: brown;
+}
+
+.title{
+    margin-left: 13%;
+    margin-top: 10%;
+}
+
+.title_h1{
+    font-size: 50px;
+    margin-bottom: 2%;
+}
+
+#lastname{
+    color:goldenrod;
+}
+
+.download{
+    color: black;
+    text-decoration: none;
+    background-color: black;
+    color:azure;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 0px;
+    display:inline-block;
+    font-weight: bold;
+}
+
+.images{
+    width:45% ;
+    height: 80%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+
+.images img{
+   position: absolute; /* overlapping as the two images as the same position and same property  */
+   height: 100%;
+   left: 50%;
+   bottom: 0px;
+   transform: translateX(-50%);
+   transition: bottom 1s,left 1s; /* while hovering if we want to move the images in a smooth way then we can give the transition property */
+}
+
+.images:hover #shape{
+    bottom: 50px;
+}
+
+.images:hover #girl{
+    left: 40%;
+}
+
+
+#about{
+    margin: 13% 8% 0px 13%;
+}
+
+.heading{
+    text-align: center;
+}
+
+.heading h2{
+     font-size: 30px;
+     font-weight: bold;
+}
+
+.heading span{
+    font-size: 20px;
+    color: rgb(7, 121, 83);
+    font-weight: 500;
+}
+
+.about-content{
+    margin-top: 2rem;/* 1rem = 16px */
+    display: grid;
+    grid-template-columns: repeat(2,1fr); /* repeat(2):2 column, 1frames (fr) :255px  */
+    gap: 2rem; /* To give gap between grid */ 
+   
+   
+}
+
+.about-details {
+    font-size: 19px;
+    font-style: 400;
+}
+
+.about-details p{
+    margin-bottom: 20px;
+    text-align: justify;
+   
+} 
+
+.about-img img {
+   width:95%;
+   border-radius: 5%;
+  
+}
+
+.info-box{
+    margin-bottom: 0.5rem;
+}
+
+.info-box span{
+    margin-left: 1rem;
+}
+
+#skills{
+    margin: 5% 8% 0px 8%;
+}
+
+.skill-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr); /* Here the image is displayed right because the first child is displayed on the left and second on the right */
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.skills-img img{
+    width: 95%;
+    border-radius: 5%;
+    margin-left: 4rem;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.bar-container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.base-bar{
+    width: 100%;
+    height:0.5rem;
+    background-color: black;
+    border-radius: 5rem;
+    position: absolute;
+    bottom: 0px;
+}
+.html-bar{
+    background-color: orange;
+    width: 95%;
+}
+
+.html1-bar{
+    background-color: orange;
+    width: 88%;
+}
+
+.html2-bar{
+    background-color: orange;
+    width: 89%;
+}
+
+.html3-bar{
+    background-color: orange;
+    width: 85%;
+}
+
+.icon-set{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons , .up-arrow{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0px 10px;
+}
+   
+
+.icons i{
+    font-size: 20px;
+    color: black;
+}
+
+.icons:hover{
+    background-image: linear-gradient(to bottom right, yellow,red);
+}
+.icons:hover i{
+     color:white;
+     animation: shake 0.75s;  
+}
+
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+}
+
+footer{
+    margin: 3rem 0px;
+}
+
+.up-arrow{
+    float: right;
+    margin: 0px 10px 50px 0px;
+    background-image: linear-gradient(to bottom right, yellow,red);
+}
+.up-arrow:hover i{
+    color: white;
+}
